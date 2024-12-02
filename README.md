@@ -39,10 +39,10 @@ user stories:
 **Then** I will get the products and their price(s) returned
 
 # David Notes
-I've updated the controller to impliment the user stories as requested. I've left the data access as-is for the purpose of the exercise.
+I've updated the controller to impliment the user stories as specifically requested in the User Stories.
 
-As left in a couple of notes there a couple of things I would do differently in a larger application but didn't want to over-engineer the solution, such as; the exchange rate could be linked to an external API, external service access would be made async (eg accessing DbContext).
+I have left in a couple of notes throughout pointing out a couple of things I would do differently in a larger application but didn't want to over-engineer the solution, such as; the exchange rate should be linked to an external API, external service access would be made async (eg accessing DbContext rather than the static data in this project).
 
-With the conversion method I wanted to show the use of abstraction with the repository model and associated interface.
+With the conversion method I wanted to show the use of abstraction with the repository model and associated interface DI.
 
 I've used the Moq package to write the unit tests for this controller - one hopes additinal dependencies are permitted within this test. For your convenience, the CLI command is dotnet add package Moq.
